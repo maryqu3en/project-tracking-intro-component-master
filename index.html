@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Project tracking intro component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Product
-  Features
-  Pricing
-  Login
+    <title>Frontend Mentor | Project tracking intro component</title>
 
-  New
-  Monograph Dashboard
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="right" class="right">
+      <img src="./images/illustration-devices.svg" alt="illustration-devices" />
+      <div id="top-buttons-right">
+        <button id="PFP" class="PFP">Product</button>
+        <button id="PFP" class="PFP">Features</button>
+        <button id="PFP" class="PFP">Pricing</button>
+        <button id="login" class="login">Login</button>
+      </div>
+      <div id="grey-bg" class="grey-bg"></div>
+    </div>
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
 
-  Schedule a demo
-  to see a live preview
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <div id="left" class="left">
+      <div id="top-buttons-left" class="top-buttons-left">
+        <button id="new" class="ne">New</button>
+        <button id="left" class="left">Monograph</button>
+        <button id="left-button" class="left-button">Dashboard</button>
+      </div>
+      <h1 id="title" class="title">Powerful insights into your team</h1>
+      <p id="text" class="text">
+        Project planning and time tracking for agile teams
+      </p>
+      <div id="bottom-buttons-left" class="bottom-buttons-left">
+        <button id="sched" class="sched">Schedule a demo</button>
+        <button id="left-button" class="left-button">
+          to see a live preview
+        </button>
+      </div>
+    </div>
+
+  </body>
 </html>
