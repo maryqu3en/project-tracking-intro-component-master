@@ -3,59 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Project tracking intro component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    
-    <div id="right" class="right">
-      <img src="./images/illustration-devices.svg" alt="illustration-devices" />
-      <div id="top-buttons-right">
-        <button id="PFP" class="PFP">Product</button>
-        <button id="PFP" class="PFP">Features</button>
-        <button id="PFP" class="PFP">Pricing</button>
-        <button id="login" class="login">Login</button>
-      </div>
-      <div id="grey-bg" class="grey-bg"></div>
-    </div>
+    <main>
+      <header>
+        <div id="logo" class="logo">
+          <img src="./images/logo.svg" alt="logo" id="logo" class="logo" />
+        </div>
+        <navbar>
+          <div id="hamburger" class="hamburger">
+            <img src="./images/icon-hamburger.svg" alt="hb-icon" id="hb-icon" class="hb-icon">
+            <img src="./images/icon-close.svg" alt="close-icon" id="close-icon" class="close-icon">
+          </div>
+          <div id="menu" class="menu">
+            <button id="PFP" class="PFP">Product</button>
+            <button id="PFP" class="PFP">Features</button>
+            <button id="PFP" class="PFP">Pricing</button>
+            <hr>
+            <button id="login" class="login">Login</button>
+          </div>
+        </navbar>
+      </header>
 
-
-    <div id="left" class="left">
-      <div id="top-buttons-left" class="top-buttons-left">
-        <button id="new" class="ne">New</button>
-        <button id="left" class="left">Monograph</button>
-        <button id="left-button" class="left-button">Dashboard</button>
+      <div id="right" class="right">
+        <img
+          src="./images/illustration-devices.svg"
+          alt="illustration-devices"
+        />
+        <div id="grey-bg" class="grey-bg"></div>
       </div>
-      <h1 id="title" class="title">Powerful insights into your team</h1>
-      <p id="text" class="text">
-        Project planning and time tracking for agile teams
-      </p>
-      <div id="bottom-buttons-left" class="bottom-buttons-left">
-        <button id="sched" class="sched">Schedule a demo</button>
-        <button id="left-button" class="left-button">
-          to see a live preview
-        </button>
+      <div id="left" class="left">
+        <div id="top-buttons-left" class="top-buttons-left">
+          <button id="new" class="ne">New</button>
+          <button id="left" class="left">Monograph</button>
+          <button id="left-button" class="left-button">Dashboard</button>
+        </div>
+        <h1 id="title" class="title">Powerful insights into your team</h1>
+        <p id="text" class="text">
+          Project planning and time tracking for agile teams
+        </p>
+        <div id="bottom-buttons-left" class="bottom-buttons-left">
+          <button id="sched" class="sched">Schedule a demo</button>
+          <p id="left-button" class="left-button">to see a live preview</p>
+        </div>
       </div>
-    </div>
-
+    </main>
+    <script src="app.js"></script>
   </body>
 </html>

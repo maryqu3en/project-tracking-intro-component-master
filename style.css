@@ -2,11 +2,11 @@
 
 :root {
     /*colors*/
-    --red: hsl(0, 100%, 68%);
-    --Very-Dark-Blue: hsl(230, 29%, 20%);
-    --Dark-Grayish-Blue: hsl(230, 11%, 40%);
-    --Grayish-Blue: hsl(231, 7%, 65%);
-    --Light-Grayish-Blue: hsl(207, 33%, 95%);
+    --red: hsl(0, 100%, 68%); /*button*/
+    --Very-Dark-Blue: hsl(230, 29%, 20%);/*header text*/
+    --Dark-Grayish-Blue: hsl(230, 11%, 40%); /*small text*/
+    --Grayish-Blue: hsl(231, 7%, 65%); /*??*/
+    --Light-Grayish-Blue: hsl(207, 33%, 95%); /*bg?*/
     /*fonts*/
     --font-size: 18px;
     --font-family-body: "Barlow";
@@ -16,4 +16,14 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+
+}
+
+.container {
+    
 }
