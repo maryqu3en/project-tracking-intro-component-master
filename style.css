@@ -1,29 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
 
 :root {
-    /*colors*/
-    --red: hsl(0, 100%, 68%); /*button*/
-    --Very-Dark-Blue: hsl(230, 29%, 20%);/*header text*/
-    --Dark-Grayish-Blue: hsl(230, 11%, 40%); /*small text*/
-    --Grayish-Blue: hsl(231, 7%, 65%); /*??*/
-    --Light-Grayish-Blue: hsl(207, 33%, 95%); /*bg?*/
-    /*fonts*/
-    --font-size: 18px;
-    --font-family-body: "Barlow";
-    --font-family-other: "Barlow Condensed";
+  /*colors*/
+  --red: hsl(0, 100%, 68%); /*button*/
+  --Very-Dark-Blue: hsl(230, 29%, 20%); /*header text*/
+  --Dark-Grayish-Blue: hsl(230, 11%, 40%); /*small text*/
+  --Grayish-Blue: hsl(231, 7%, 65%); /*??*/
+  --Light-Grayish-Blue: hsl(207, 33%, 95%); /*bg?*/
+  /*fonts*/
+  --font-size: 18px;
+  --font-family-body: "Barlow";
+  --font-family-other: "Barlow Condensed";
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    min-width: 100vw;
-    min-height: 100vh;
-
+  min-width: 100vw;
+  min-height: 100vh;
+  font-size: var(--font-size);
+  overflow-x: hidden;
 }
 
-.container {
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 50px 100px 50px 100px;
+}
+
+header {
+  /* background-color: cornflowerblue; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: max-content;
+}
+
+#logo-icon {
+  border-radius: 4px;
+}
+
+navbar {
+  display: flex;
+}
+
+#hamburger {
+  display: none;
+}
+
+#menu {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  margin: auto;
+}
+
+hr {
+  width: 5px;
+  height: 5px;
+  background-color: var(--Grayish-Blue);
+  border-radius: 50%;
+  border: none;
+  margin: auto;
+}
+
+#PFP,
+#login {
+  border: none;
+  background: none;
+  font-size: 1.3em;
+  font-family: var(--font-family-other);
+  cursor: pointer;
+}
+
+#PFP {
+  color: var(--Very-Dark-Blue);
+}
+
+#login {
+  color: var(--Grayish-Blue);
+}
+
+#PFP:hover,
+#login:hover {
+  text-decoration: underline;
+}
+
+#main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+#right-top {
+}
+
+#illustration-devices {
+  margin-right: -350px;
+  margin-bottom: -100px;
+}
+
+#grey-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -370px;
+  right: -700px;
+  z-index: -1;
+  background-color: var(--Light-Grayish-Blue);
+  border-radius: 10%;
+}
+
+#left-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  height: 500px;
+  width: 100%;
+}
+
+#left-button, #new {
+  border: none;
+  background: none;
+  font-family: var(--font-family-other);
+  font-size: 1.3rem;
+  line-height: 30px;
+  font-weight: 300;
+  color: var(--Grayish-Blue);
+}
+
+h1 {
+    padding-right: 20%;
+  color: var(--Very-Dark-Blue);
+  font-family: var(--font-family-other);
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#text {
+    font-family: var(--font-family-body);
+    color: var(--Dark-Grayish-Blue);
+}
+
+#bottom-buttons-left {
+  display: flex;
+  gap: 10px;
+  
+}
+
+#sched {
     
 }
