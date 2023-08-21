@@ -9,7 +9,7 @@
   --Light-Grayish-Blue: hsl(207, 33%, 95%); /*bg?*/
   /*fonts*/
   --font-size: 18px;
-  --font-family-body: "Barlow" , sans-serif;
+  --font-family-body: "Barlow", sans-serif;
   --font-family-other: "Barlow Condensed", sans-serif;
 }
 
@@ -50,7 +50,7 @@ navbar {
 
 #menu {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   align-items: end;
   gap: 30px;
   margin: auto;
@@ -69,7 +69,7 @@ hr {
 .login {
   border: none;
   background: none;
-  font-size: .9em;
+  font-size: 0.9em;
   font-family: var(--font-family-other);
   font-weight: 700;
   text-transform: uppercase;
@@ -125,14 +125,24 @@ main {
   padding-left: 10%;
 }
 
-.left-button, #new {
+.left-button,
+#new {
   border: none;
   background: none;
   font-family: var(--font-family-other);
   font-size: 1.3rem;
-  line-height: 30px;
   font-weight: 300;
   color: var(--Grayish-Blue);
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 8px 0 8px;
+}
+
+#new {
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  padding: 0 10px 0 10px;
+  border-radius: 15px;
 }
 
 h1 {
@@ -145,22 +155,33 @@ h1 {
 }
 
 #text {
-    font-family: var(--font-family-body);
-    color: var(--Dark-Grayish-Blue);
+  font-family: var(--font-family-body);
+  color: var(--Dark-Grayish-Blue);
+  margin: 10px 0 20px 0;
 }
 
 #bottom-buttons-left {
   display: flex;
   gap: 10px;
-  
 }
 
 #sched {
-    
+  background-color: var(--red);
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  transition: all ease 0.15s;
+  cursor: pointer;
 }
 
-@media (max-width:1060px) {
-  .illustration-devices{
+#sched:active {
+  opacity: 0.75;
+}
+
+@media (max-width: 1060px) {
+  .illustration-devices {
     transform: translate(-4%);
   }
 
@@ -169,35 +190,40 @@ h1 {
     padding-left: 5%;
   }
 
-  h1{
+  h1 {
     font-size: 3rem;
   }
 }
 
-@media (max-width:600px) {
-  
+@media (max-width: 600px) {
   #hamburger {
     display: block;
     cursor: pointer;
   }
 
   #menu {
-        display: none;
-        width: 80%;
-        grid-template-columns: 1fr;
-        position: fixed;
-        z-index: 50;
-        margin: 60px -75%;
-        padding: 30px;
-        border-radius: 5px;
-        box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.15);
-        background-color: #fff;
-        text-align: center;
+    display: none;
+    width: 80%;
+    grid-template-columns: 1fr;
+    position: fixed;
+    z-index: 50;
+    margin: 60px -75%;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    text-align: center;
   }
 
   @keyframes display-menu {
-    from{ transform: scale(0.9); opacity: 0.5;}
-    to { transform: scale(1); opacity: 1;}
+    from {
+      transform: scale(0.9);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 
   .PFP,
@@ -212,7 +238,7 @@ h1 {
     border-radius: 0;
   }
 
-  .close-icon{
+  .close-icon {
     display: none;
   }
 
@@ -230,17 +256,17 @@ h1 {
   }
 
   .left-bottom {
-    padding:20px;
+    padding: 20px;
   }
 
   h1 {
     font-size: 2.5rem;
     width: 100%;
-}
+  }
 }
 
-@media (max-width:350px) {
-  h1{
+@media (max-width: 350px) {
+  h1 {
     font-size: 1.5rem;
   }
 }
